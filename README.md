@@ -1,6 +1,8 @@
-# AnimatedIconButton
+# AnimatedIconButton #
 
-[![](https://jitpack.io/v/AnuragRanjan2003/AnimatedIconButton.svg)](https://jitpack.io/#AnuragRanjan2003/AnimatedIconButton)
+## include into project ##
+
+>version : [![](https://jitpack.io/v/AnuragRanjan2003/AnimatedIconButton.svg)](https://jitpack.io/#AnuragRanjan2003/AnimatedIconButton)
 
 
 To get a Git project into your build:
