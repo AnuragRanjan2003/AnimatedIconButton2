@@ -42,5 +42,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     //testing the module
-    implementation project(':animated-button')
+    //implementation project(':animated-button')
+    implementation 'com.github.AnuragRanjan2003:AnimatedIconButton:1.0.0-beta'
 }

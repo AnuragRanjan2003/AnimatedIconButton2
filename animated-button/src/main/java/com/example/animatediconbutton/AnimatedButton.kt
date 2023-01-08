@@ -14,6 +14,8 @@ class AnimatedButton(context: Context, attr: AttributeSet) : ConstraintLayout(co
     private val textView: TextView
     private val img: ImageView
     private val progressBar: ProgressBar
+    var changeText:String = "wait"
+    var isClicked = false
 
 
     init {
@@ -35,7 +37,7 @@ class AnimatedButton(context: Context, attr: AttributeSet) : ConstraintLayout(co
         return attributes.getString(R.styleable.AnimatedButton_ab_text)
     }
 
-    @SuppressWarnings
+
     fun setText(text: String) {
         textView.text = text
         textView.textSize = attributes.getDimension(R.styleable.AnimatedButton_ab_textSize, 18F)
@@ -50,15 +52,26 @@ class AnimatedButton(context: Context, attr: AttributeSet) : ConstraintLayout(co
     }
 
     fun activateButton() {
-        textView.text = attributes.getString(R.styleable.AnimatedButton_ab_changeText)
+        setText(changeText)
         progressBar.visibility = View.VISIBLE
     }
 
     fun deactivateButton() {
-        textView.text = attributes.getString(R.styleable.AnimatedButton_ab_text)
+        setText(attributes.getString(R.styleable.AnimatedButton_ab_text)!!)
         progressBar.visibility = View.GONE
     }
 
+    fun clicked(){
+        when(isClicked){
+            false-> activateButton()
+            else-> deactivateButton()
+        }
+        isClicked=!isClicked
+    }
+
+    fun setTextSize(size : Float){
+        textView.textSize = size
+    }
 
 
 

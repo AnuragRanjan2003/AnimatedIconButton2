@@ -3,7 +3,6 @@
     <declare-styleable name="AnimatedButton">
         <attr name="ab_strokeWidth" format="dimension"/>
         <attr name="ab_text" format="string"/>
-        <attr name="ab_changeText" format="string"/>
         <attr name="ab_icon" format="reference"/>
         <attr name="ab_textSize" format="dimension"/>
     </declare-styleable>
