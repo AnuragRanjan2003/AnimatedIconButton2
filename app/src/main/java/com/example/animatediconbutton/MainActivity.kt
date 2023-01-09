@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         val animatedButton = findViewById<AnimatedButton>(R.id.btn)
 
         animatedButton.setOnClickListener {
-            animatedButton.activateButton()
+            animatedButton.clicked()
         }
     }
 }
