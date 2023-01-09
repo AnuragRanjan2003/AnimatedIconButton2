@@ -2,7 +2,9 @@
 
 ## include into project ##
 
->version : [![](https://jitpack.io/v/AnuragRanjan2003/AnimatedIconButton.svg)](https://jitpack.io/#AnuragRanjan2003/AnimatedIconButton)
+>version : [![](https://jitpack.io/v/AnuragRanjan2003/AnimatedIconButton2.svg)](https://jitpack.io/#AnuragRanjan2003/AnimatedIconButton2)
+
+
 
 
 To get a Git project into your build:
@@ -21,6 +23,6 @@ allprojects {
   
  ```gradle
  dependencies {
-	        implementation 'com.github.AnuragRanjan2003:AnimatedIconButton:$version'
+	        implementation 'com.github.AnuragRanjan2003:AnimatedIconButton2:$version'
 	}
   ```
