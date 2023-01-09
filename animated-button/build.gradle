@@ -3,7 +3,13 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 
+
 }
+task androidSourcesJar(type: Jar) {
+    classifier 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
 
 android {
     namespace 'com.example.animatediconbutton'
@@ -49,15 +55,11 @@ dependencies {
 
 }
 
-afterEvaluate {
+project.afterEvaluate {
     publishing {
-        publications{
+        publications {
             release(MavenPublication) {
-                from components['release']
-
-                groupId = 'com.github.AnuragRanjan2003'
-                artifactId = 'animated-button'
-                version = '1.3'
+                from components.release
             }
         }
     }
